@@ -13,27 +13,27 @@ const operacion = (numA, numB, array, opcion) => {
     {
         let oper = parseInt(numA)+parseInt(numB);
         array.push("Suma")
-        return `el resultado de la suma es: ${oper}`;
+        return `el resultado de la suma es: ${oper} \noperaciones realizadas: ${array}`;
     }
     else if(opcion == 2)
     {
         let oper = numA-numB;
         array.push("Resta")
-        return `el resultado de la resta es: ${oper}`;
+        return `el resultado de la resta es: ${oper} \noperaciones realizadas: ${array}`;
 
     }
     else if(opcion == 3)
     {
         let oper = numA*numB;
         array.push("Mutiplicacion")
-        return `el resultado de la mutiplicacion es: ${oper}`;
+        return `el resultado de la mutiplicacion es: ${oper} \noperaciones realizadas: ${array}`;
 
     }
     else if(opcion == 4)
     {
         let oper = numA/numB;
         array.push("Division")
-        return `el resultado de la division es: ${oper}`;
+        return `el resultado de la division es: ${oper} \noperaciones realizadas: ${array}`;
     }
     else if(opcion <=5)
     {
@@ -49,5 +49,4 @@ opcion = prompt("1. sumar \n" +
                 "4. Dividir\n" +
                 "0. Salir");
 console.log(operacion(numUno, numDos, cantOperaciones, opcion))
-console.log(`Operaciones realizadas: ${cantOperaciones}`);
 }
